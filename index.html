@@ -394,20 +394,30 @@
         <form>
           <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
 
-          <div class="modal-form">
-            <label for="name">Ім'я</label>
+          <div class="modal-form form-name">
+            <label for="name" class="label-modal">Ім'я</label>
             <input id="name" class="modal-input" />
           </div>
           <div class="modal-form">
-            <label for="telephon">Телефон</label>
+            <label for="telephon" class="label-modal">Телефон</label>
             <input id="telephon" class="modal-input" />
           </div>
           <div class="modal-form">
-            <label for="email">Пошта</label>
+            <label for="email" class="label-modal">Пошта</label>
             <input id="email" class="modal-input" />
           </div>
-          <label>Коментар</label>
-          <textarea></textarea>
+          <div class="textarea-modal">
+            <label class="label-modal">Коментар</label>
+            <textarea class="text-modal modal-input" placeholder="Введіть текст"></textarea>
+          </div>
+          <div class="info">
+            <p class="text">
+              Погоджуюся з розсилкою та приймаю <a class="link-modal">Умови договору</a>
+            </p>
+          </div>
+          <div class="send">
+            <button class="btn-send">Відправити</button>
+          </div>
         </form>
       </div>
     </div>
