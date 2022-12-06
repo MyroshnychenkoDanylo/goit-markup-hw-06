@@ -315,6 +315,7 @@ input {
 }
 
 .modal-input {
+  height: 40px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -342,6 +343,7 @@ input {
 }
 .form-name {
   margin-top: 12px;
+  position: relative;
 }
 
 .label-modal {
@@ -398,6 +400,22 @@ input {
 .modal .send {
   display: flex;
   justify-content: center;
+}
+
+.icon-person-black {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
+.modal-input:focus + .icon-person-black,
+.modal-input:hover + .icon-person-black {
+  fill: var(--background-social-network-hover);
+}
+
+.modal-input:focus,
+.modal-input:hover {
+  border: 1px solid var(--background-social-network-hover);
 }
 
 .button-close {
