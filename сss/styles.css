@@ -388,10 +388,7 @@ input {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
-.modal .agreement {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
+
 .link-modal {
   text-decoration: underline;
   color: var(--link-modal-color);
@@ -473,13 +470,12 @@ input {
   outline: transparent;
 }
 
-.checkbox {
-  display: flex;
-  align-items: center;
-}
 .agreement {
   display: flex;
   align-items: center;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
 
 .checkbox-modal {
@@ -498,13 +494,18 @@ input {
 
 .icon-check svg {
   fill: transparent;
+  background-origin: border-box;
 }
-.agreement-checkbox:checked + label > span {
+.agreement-checkbox {
+  appearance: none;
+  position: absolute;
+}
+.agreement-checkbox:checked + span {
   border: none;
   background-color: #2196f3;
 }
 
-.agreement-checkbox:checked + label > span svg {
+.agreement-checkbox:checked + span svg {
   fill: var(--color-button);
 }
 
